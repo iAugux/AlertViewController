@@ -10,13 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func doStuffAction(_ sender: Any) {
-        // Create AlertController
-        let alert = AlertController(title: "Tesing", message: "Wubba lubba dub dub", preferredStyle: .alert)
-        alert.setTitleImage(UIImage(named: "alert"))
+    @IBAction func doStuffAction(_ sender: UIButton) {
+        let style: UIAlertControllerStyle = sender.tag == 0 ? .alert : .actionSheet
+        let alert = ImageAlertController(image: UIImage(named: "alert"), size: CGSize(width: 44, height: 44), title: "Tesing", message: "Wubba lubba dub dub", preferredStyle: style)
+
+        if sender.tag > 0 {
+            alert.popoverPresentationController?.sourceView = sender
+            alert.popoverPresentationController?.sourceRect = sender.bounds
+            alert.modalPresentationStyle = .popover
+        }
+
         // Add actions
-        let action = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        action.actionImage = UIImage(named: "close")
+        let action = UIAlertAction(title: "Cancel", image: UIImage(named: "close"), style: .cancel, handler: nil)
         alert.addAction(UIAlertAction(title: "Default", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Destroy", style: .destructive, handler: nil))
         alert.addAction(action)

@@ -12,8 +12,7 @@
 		9F7476F61F288C33000E2B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7476F41F288C33000E2B6A /* Main.storyboard */; };
 		9F7476F81F288C33000E2B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F7476F71F288C33000E2B6A /* Assets.xcassets */; };
 		9F7476FB1F288C33000E2B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7476F91F288C33000E2B6A /* LaunchScreen.storyboard */; };
-		9F7477031F288C66000E2B6A /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7477021F288C66000E2B6A /* AlertViewController.swift */; };
-		9F7477051F28BD76000E2B6A /* UIAlertAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7477041F28BD76000E2B6A /* UIAlertAction+Extensions.swift */; };
+		9F7477031F288C66000E2B6A /* ImageAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7477021F288C66000E2B6A /* ImageAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +24,7 @@
 		9F7476F71F288C33000E2B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F7476FA1F288C33000E2B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F7476FC1F288C33000E2B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F7477021F288C66000E2B6A /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
-		9F7477041F28BD76000E2B6A /* UIAlertAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+Extensions.swift"; sourceTree = "<group>"; };
+		9F7477021F288C66000E2B6A /* ImageAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +60,7 @@
 			children = (
 				9F7476F01F288C33000E2B6A /* AppDelegate.swift */,
 				9F7476F21F288C33000E2B6A /* ViewController.swift */,
-				9F7477021F288C66000E2B6A /* AlertViewController.swift */,
-				9F7477041F28BD76000E2B6A /* UIAlertAction+Extensions.swift */,
+				9F7477021F288C66000E2B6A /* ImageAlertViewController.swift */,
 				9F7476F41F288C33000E2B6A /* Main.storyboard */,
 				9F7476F71F288C33000E2B6A /* Assets.xcassets */,
 				9F7476F91F288C33000E2B6A /* LaunchScreen.storyboard */,
@@ -104,7 +101,7 @@
 				TargetAttributes = {
 					9F7476EC1F288C33000E2B6A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = T8TH53QYXW;
+						DevelopmentTeam = J4Z2NCTR3S;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,9 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7477051F28BD76000E2B6A /* UIAlertAction+Extensions.swift in Sources */,
 				9F7476F31F288C33000E2B6A /* ViewController.swift in Sources */,
-				9F7477031F288C66000E2B6A /* AlertViewController.swift in Sources */,
+				9F7477031F288C66000E2B6A /* ImageAlertViewController.swift in Sources */,
 				9F7476F11F288C33000E2B6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T8TH53QYXW;
+				DEVELOPMENT_TEAM = J4Z2NCTR3S;
 				INFOPLIST_FILE = AlertViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.AlertViewController;
@@ -286,7 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T8TH53QYXW;
+				DEVELOPMENT_TEAM = J4Z2NCTR3S;
 				INFOPLIST_FILE = AlertViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.AlertViewController;
