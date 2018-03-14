@@ -143,8 +143,8 @@ class ImageAlertController: UIAlertController {
     struct Constants {
         static let titleAttributedKey = "attributedTitle"
         static let messageAttributedKey = "attributedMessage"
-        static var paddingAlert: CGFloat = 22
-        static var paddingSheet: CGFloat = 16
+        static let paddingAlert: CGFloat = 22
+        static let paddingSheet: CGFloat = 12
         static func padding(for style: UIAlertControllerStyle) -> CGFloat {
             return style == .alert ? Constants.paddingAlert : Constants.paddingSheet
         }
