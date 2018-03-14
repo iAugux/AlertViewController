@@ -78,6 +78,48 @@ class ImageAlertController: UIAlertController {
         imageView.center.y = padding + linesCount * lineHeight / 2.0
         super.viewDidLayoutSubviews()
     }
+
+    /// Set alert's title, font and color
+    ///
+    /// - Parameters:
+    ///   - title: alert title
+    ///   - font: alert title font
+    ///   - color: alert title color
+    func set(title: String?, font: UIFont, color: UIColor) {
+        if title != nil {
+            self.title = title
+        }
+        setTitle(font: font, color: color)
+    }
+
+    func setTitle(font: UIFont, color: UIColor) {
+        guard let title = self.title/*, self.responds(to: Selector(Constants.titleAttributedKey))*/ else { return }
+
+        let attributes: [NSAttributedStringKey: Any] = [.font: font, .foregroundColor: color]
+        let attributedTitle = NSMutableAttributedString(string: title, attributes: attributes)
+        setValue(attributedTitle, forKey: Constants.titleAttributedKey)
+    }
+
+    /// Set alert's message, font and color
+    ///
+    /// - Parameters:
+    ///   - message: alert message
+    ///   - font: alert message font
+    ///   - color: alert message color
+    func set(message: String?, font: UIFont, color: UIColor) {
+        if message != nil {
+            self.message = message
+        }
+        setMessage(font: font, color: color)
+    }
+
+    func setMessage(font: UIFont, color: UIColor) {
+        guard let message = self.message/*, self.responds(to: Selector(Constants.messageAttributedKey))*/ else { return }
+
+        let attributes: [NSAttributedStringKey: Any] = [.font: font, .foregroundColor: color]
+        let attributedMessage = NSMutableAttributedString(string: message, attributes: attributes)
+        setValue(attributedMessage, forKey: Constants.messageAttributedKey)
+    }
     
     /// Adds appropriate number of "\n" to `title` text to make space for `imageView`
     private func adjustTitle(for imageView: UIImageView) {
@@ -99,6 +141,8 @@ class ImageAlertController: UIAlertController {
     }()
     
     struct Constants {
+        static let titleAttributedKey = "attributedTitle"
+        static let messageAttributedKey = "attributedMessage"
         static var paddingAlert: CGFloat = 22
         static var paddingSheet: CGFloat = 16
         static func padding(for style: UIAlertControllerStyle) -> CGFloat {
@@ -136,7 +180,17 @@ extension UIAlertAction {
         }
     }
 
+    var titleTextColor: UIColor? {
+        get {
+            return self.value(forKey: Constants.titleTextColorKey) as? UIColor
+        }
+        set {
+            self.setValue(newValue, forKey: Constants.titleTextColorKey)
+        }
+    }
+
     private struct Constants {
-        static var imageKey = "image"
+        static let imageKey = "image"
+        static let titleTextColorKey = "titleTextColor"
     }
 }

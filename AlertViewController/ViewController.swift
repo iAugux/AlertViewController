@@ -20,8 +20,13 @@ class ViewController: UIViewController {
             alert.modalPresentationStyle = .popover
         }
 
+        alert.setTitle(font: UIFont.systemFont(ofSize: 18, weight: .bold), color: .gray)
+        alert.setMessage(font: UIFont.systemFont(ofSize: 11, weight: .medium), color: .red)
+
         // Add actions
         let action = UIAlertAction(title: "Cancel", image: UIImage(named: "close"), style: .cancel, handler: nil)
+        action.titleTextColor = .yellow
+
         alert.addAction(UIAlertAction(title: "Default", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Destroy", style: .destructive, handler: nil))
         alert.addAction(action)
