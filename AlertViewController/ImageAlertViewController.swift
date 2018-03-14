@@ -19,7 +19,7 @@ class ImageAlertController: UIAlertController {
     /// - Return: value that was set on `title`
     private(set) var originalTitle: String?
     private var spaceAdjustedTitle: String = ""
-    private weak var imageView: UIImageView? = nil
+    private(set) weak var imageView: UIImageView? = nil
     private var previousImgViewSize: CGSize = .zero
     private var imageViewSize: CGSize?
 
