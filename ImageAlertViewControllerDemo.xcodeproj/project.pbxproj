@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		9F70A9341F3E33F800721047 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9F7476ED1F288C33000E2B6A /* AlertViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7476ED1F288C33000E2B6A /* ImageAlertViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageAlertViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7476F01F288C33000E2B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F7476F21F288C33000E2B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F7476F51F288C33000E2B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		9F7476EE1F288C33000E2B6A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F7476ED1F288C33000E2B6A /* AlertViewController.app */,
+				9F7476ED1F288C33000E2B6A /* ImageAlertViewControllerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,9 +72,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F7476EC1F288C33000E2B6A /* AlertViewController */ = {
+		9F7476EC1F288C33000E2B6A /* ImageAlertViewControllerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F7476FF1F288C33000E2B6A /* Build configuration list for PBXNativeTarget "AlertViewController" */;
+			buildConfigurationList = 9F7476FF1F288C33000E2B6A /* Build configuration list for PBXNativeTarget "ImageAlertViewControllerDemo" */;
 			buildPhases = (
 				9F7476E91F288C33000E2B6A /* Sources */,
 				9F7476EA1F288C33000E2B6A /* Frameworks */,
@@ -84,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = AlertViewController;
+			name = ImageAlertViewControllerDemo;
 			productName = AlertViewController;
-			productReference = 9F7476ED1F288C33000E2B6A /* AlertViewController.app */;
+			productReference = 9F7476ED1F288C33000E2B6A /* ImageAlertViewControllerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9F7476E81F288C33000E2B6A /* Build configuration list for PBXProject "AlertViewController" */;
+			buildConfigurationList = 9F7476E81F288C33000E2B6A /* Build configuration list for PBXProject "ImageAlertViewControllerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -119,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F7476EC1F288C33000E2B6A /* AlertViewController */,
+				9F7476EC1F288C33000E2B6A /* ImageAlertViewControllerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -294,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F7476E81F288C33000E2B6A /* Build configuration list for PBXProject "AlertViewController" */ = {
+		9F7476E81F288C33000E2B6A /* Build configuration list for PBXProject "ImageAlertViewControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F7476FD1F288C33000E2B6A /* Debug */,
@@ -303,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F7476FF1F288C33000E2B6A /* Build configuration list for PBXNativeTarget "AlertViewController" */ = {
+		9F7476FF1F288C33000E2B6A /* Build configuration list for PBXNativeTarget "ImageAlertViewControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F7477001F288C33000E2B6A /* Debug */,
